@@ -1,0 +1,17 @@
+```{r, echo=TRUE}
+activity<- read.csv("./activity.csv")
+str(activity)
+head(activity)
+clean_activity <-  activity[!is.na (activity)]
+summary(clean_activity)
+```
+#### What is mean total number of steps taken per day?
+For this part of the assignment, you can ignore the missing values in the dataset.
+
+1. Make a histogram of the total number of steps taken each day
+```{r,echo=TRUE}
+steps_date <- aggregate(steps ~ date, data=activity, FUN=sum)
+str(steps_date)
+
+barplot(steps_date$steps, names.arg=steps_date$date, xlab="date", ylab="steps",col="blue")
+```
