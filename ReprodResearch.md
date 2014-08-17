@@ -1,15 +1,7 @@
-####Loading and preprocessing the data
- 
-```{r dataprocessing, echo=FALSE}
-
-#download and unzip file
-setInternet2(TRUE)
-if(file.exists("dataset")==F){
-        dir.create("dataset")  #check if "dataset" folder exist. If doesnt, create it.
-}
-downloadurl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
-download.file(downloadurl, "dataset/dlfile.zip")
-unzip("dataset/dlfile.zip", exdir="dataset")
+ ```{r, echo=TRUE}
+library(knitr)
+opts_knit$set(progress=FALSE)
+opts_chunk$set(echo=TRUE, message=FALSE, tidy=TRUE, comment=NA,fig.path="figure/", fig.keep="high", fig.width=10, fig.height=6,fig.align="center")
 ```
 
 
