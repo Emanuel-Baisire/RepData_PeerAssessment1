@@ -1,8 +1,4 @@
-pre class="r"><code>library(knitr)</code></pre>
-<pre><code>## Warning: package 'knitr' was built under R version 3.0.3</code></pre>
-<pre class="r"><code>library(markdown)</code></pre>
-<pre><code>## Warning: package 'markdown' was built under R version 3.0.3</code></pre>
-<div id="loading-and-preprocessing-the-data" class="section level4">
+
 <h4>Loading and preprocessing the data</h4>
 <pre class="r"><code>activity&lt;- read.csv(&quot;./activity.csv&quot;)
 str(activity)</code></pre>
