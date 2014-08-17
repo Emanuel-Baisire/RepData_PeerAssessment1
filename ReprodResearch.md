@@ -1,4 +1,19 @@
 ####Loading and preprocessing the data
+ 
+```{r dataprocessing, echo=FALSE}
+
+#download and unzip file
+setInternet2(TRUE)
+if(file.exists("dataset")==F){
+        dir.create("dataset")  #check if "dataset" folder exist. If doesnt, create it.
+}
+downloadurl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
+download.file(downloadurl, "dataset/dlfile.zip")
+unzip("dataset/dlfile.zip", exdir="dataset")
+```
+
+
+####Loading and preprocessing the data
 ```{r, echo=TRUE}
 activity<- read.csv("./activity.csv")
 str(activity)
