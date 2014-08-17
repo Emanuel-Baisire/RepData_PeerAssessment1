@@ -1,18 +1,4 @@
 
-<body>
- 
-<style type="text/css"> 
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
-<div class="container-fluid main-container">
- 
- 
- 
- 
 <pre class="r"><code>library(knitr)</code></pre>
 <pre><code>## Warning: package 'knitr' was built under R version 3.0.3</code></pre>
 <pre class="r"><code>library(markdown)</code></pre>
